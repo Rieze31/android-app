@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom styles for AlertDialog buttons -->
+    <style name="JoinButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/add</item>
+        <item name="android:textColor">@color/black</item>
+        <!-- Add more attributes as needed -->
+    </style>
+
+    <style name="CancelButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/cancel</item>
+        <item name="android:textColor">@color/black</item>
+        <!-- Add more attributes as needed -->
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme attributes here -->
+    </style>
+</resources>

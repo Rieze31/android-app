@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/class_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".class_page">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_300sdp"
+
+        android:backgroundTint="#001834"
+        android:contentDescription="add_class"
+        android:fontFamily="@font/inter_light"
+        android:src="@drawable/baseline_add_24"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30ssp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSemester"
+        app:layout_constraintVertical_bias="1.0"
+        app:tint="@color/white" />
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/txtSearch"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border_radiusbg"
+        android:backgroundTint="#D9D9D9"
+        android:ems="10"
+        app:iconifiedByDefault="false"
+        android:fontFamily="@font/inter_light"
+        android:inputType="text"
+        android:queryHint="Search"
+        android:textColor="#767676"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:searchHintIcon="@null"></androidx.appcompat.widget.SearchView>
+
+
+    <TextView
+        android:id="@+id/txtNumOfClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Number of classes: 0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSearch" />
+
+    <Spinner
+        android:id="@+id/cbSemester"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_190sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+
+        android:background="@color/profile_color"
+        android:contentDescription="@string/select_semester"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSearch">
+
+    </Spinner>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="373dp"
+        android:layout_height="404dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumOfClass" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

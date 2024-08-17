@@ -1,0 +1,11 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/comfortaa_bold"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:text="1st Semester"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_12ssp"
+     />

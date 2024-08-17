@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:forceDarkAllowed="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartTrack"
+        tools:targetApi="31" >
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".StudentCompleteGrades2"
+            android:exported="true" />
+        <activity
+            android:name=".TeacherSectionPage2"
+            android:exported="true" />
+        <activity
+            android:name=".AddSecondSem"
+            android:exported="true" />
+        <activity
+            android:name=".ViewProfile"
+            android:exported="true" />
+        <activity
+            android:name=".EditClass"
+            android:exported="true" />
+        <activity
+            android:name=".StudentEditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".StudentCompleteGrades"
+            android:exported="true" />
+        <activity
+            android:name=".TeacherEditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".student_profile"
+            android:exported="true" />
+        <activity
+            android:name=".student_grades_page"
+            android:exported="true" />
+        <activity
+            android:name=".student_section_page"
+            android:exported="true" />
+        <activity
+            android:name=".student_homepage"
+            android:exported="true" />
+        <activity
+            android:name=".AddGrades"
+            android:exported="true" />
+        <activity
+            android:name=".TeacherGradesPage"
+            android:exported="true" />
+        <activity
+            android:name=".TeacherSectionPage"
+            android:exported="true" />
+        <activity
+            android:name=".TeacherProfile"
+            android:exported="true" />
+        <activity
+            android:name=".AddClass"
+            android:exported="true" />
+        <activity
+            android:name=".teacher_homepage"
+            android:exported="true" />
+        <activity
+            android:name=".teacher_login_page"
+            android:exported="true" />
+        <activity
+            android:name=".teacher_register"
+            android:exported="true" />
+        <activity
+            android:name=".home_page"
+            android:exported="true" />
+        <activity
+            android:name=".student_register"
+            android:exported="true" />
+        <activity
+            android:name=".student_login_page"
+            android:exported="true" />
+        <activity
+            android:name=".choose_role"
+            android:exported="true" />
+        <activity
+            android:name=".login_page"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

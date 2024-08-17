@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- background_circle_overlay.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/_130sdp" /> <!-- Match the radius of your CircleImageView -->
+    <solid android:color="#80000000" /> <!-- Semi-transparent black color -->
+</shape>

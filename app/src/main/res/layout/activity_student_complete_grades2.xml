@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_bg"
+
+    android:layout_height="match_parent"
+    tools:context=".StudentCompleteGrades2">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat8"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#D9D9D9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBackLogin"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="#D9D9D9"
+            android:contentDescription="Back"
+            app:srcCompat="@drawable/btn_back"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-1dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat8">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:fontFamily="@font/balooda2_bold"
+            android:text="Second Semester Grades"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat11"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/border_radius"
+            android:backgroundTint="@color/midnight_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/gwa"
+                android:gravity="center"
+                android:fontFamily="@font/balooda2_bold"
+                android:text="0 GWA"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp" />
+
+            <TextView
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:id="@+id/ranking"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/balooda2_bold"
+                android:text="No Honor"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <TableLayout
+            android:id="@+id/tableLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_350sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:stretchColumns="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat11">
+
+
+
+
+
+        </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

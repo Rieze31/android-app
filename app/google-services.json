@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "93149968494",
+    "project_id": "student-accounts-bb1bd",
+    "storage_bucket": "student-accounts-bb1bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93149968494:android:edd38567a2efc8ef178e7f",
+        "android_client_info": {
+          "package_name": "com.example.smarttrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUjGlSSK15tOdQ00sjesUIQMl7QupDJZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

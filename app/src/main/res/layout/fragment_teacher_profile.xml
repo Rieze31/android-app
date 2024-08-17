@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".TeacherProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/teacherImage"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:src="@drawable/teacher_image"
+        app:civ_border_color="#000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/balooda2_bold"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="@color/midnight_blue"
+        android:textSize="@dimen/_25ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherImage" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-14dp"
+        android:fontFamily="@font/balooda2_regular"
+        android:text="user_email@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@color/midnight_blue"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFullName" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editProfile"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/background_light"
+        android:fontFamily="@font/inter_bold"
+        android:text="Edit Profile"
+        android:textAlignment="textStart"
+        android:textColor="@color/midnight_blue"
+        android:textSize="@dimen/_12ssp"
+        app:backgroundTint="@color/profile_color"
+        app:icon="@drawable/baseline_edit_24"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconTint="@color/midnight_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_50sdp"
+
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_light"
+
+        android:fontFamily="@font/inter_bold"
+        android:text="Log Out"
+        android:textAlignment="textStart"
+        android:textColor="@color/midnight_blue"
+        android:textSize="@dimen/_12ssp"
+        app:backgroundTint="@color/profile_color"
+        app:icon="@drawable/logout_icon"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconTint="@color/midnight_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfile">
+
+    </com.google.android.material.button.MaterialButton>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ffffff">#FFFFFF</color>
+    <color name="add">#4CAF50</color>
+    <color name="cancel">#E13131</color>
+    <color name="profile_color">#D9D9D9</color>
+<color name="midnight_blue">#004FAC</color>
+    <color name="header">  #001834</color>
+
+</resources>

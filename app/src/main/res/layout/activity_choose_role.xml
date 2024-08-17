@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="407dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:gravity="center"
+        android:text="Choose Your Role"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnStudent"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:background="@drawable/border_radius"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="Student-btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357"
+        app:srcCompat="@drawable/student_image" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="129dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="116dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Student"
+        android:textColor="#001834"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnStudent" />
+
+    <ImageButton
+        android:id="@+id/btnTeacher"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/border_radius"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="Teacher-btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStudent"
+        app:srcCompat="@drawable/teacher_image" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="129dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="116dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Teacher"
+        android:textColor="#001834"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTeacher"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

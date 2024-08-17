@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/_12sdp"
+    android:layout_marginEnd="@dimen/_12sdp"
+    android:layout_marginVertical="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardElevation="@dimen/_8sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/topStudents"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:scaleType="centerCrop">
+        </com.google.android.material.imageview.ShapeableImageView>
+        <TextView
+            android:id="@+id/topOne"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:text="Name of Student"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="@dimen/_12ssp"
+            android:layout_toEndOf="@id/topStudents">
+        </TextView>
+        <TextView
+            android:id="@+id/topOneGWA"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:text="GWA"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="@dimen/_12ssp"
+            android:layout_toEndOf="@id/topOne">
+        </TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".AddSecondSem">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:background="@drawable/gradientbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/class_icon"
+            android:contentDescription="class image">
+        </ImageView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/gradientbg"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBackLogin"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:background="#00000000"
+            android:layout_gravity="start"
+            android:contentDescription="Back"
+            android:src="@drawable/btn_back_white"/>
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:text="Add new class"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter_bold"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:background="#00000000"
+
+            android:layout_gravity="end"
+            android:contentDescription="Back"
+            app:srcCompat="@drawable/baseline_check_24"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="290dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbStrand">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSection"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/inter_light"
+            android:hint="Section"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="@dimen/_14ssp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:gravity="center"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/baseline_content_copy_24"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat7">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_47sdp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/inter_light"
+            android:hint="Code"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="@dimen/_14ssp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="290dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSubject"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/inter_light"
+            android:hint="Subject"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="@dimen/_14ssp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/cbStrand"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/profile_color"
+        android:contentDescription="Select Grade"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbGrade" />
+
+
+    <Spinner
+        android:id="@+id/cbGrade"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/profile_color"
+        android:contentDescription="Select Grade"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

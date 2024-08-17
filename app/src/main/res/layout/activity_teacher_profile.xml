@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherProfile">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat3"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="@dimen/_185sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleY="1.3"
+            android:scaleX="1"
+            android:src="@drawable/school_pic">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_500sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:background="@drawable/border_radiusbg"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:gravity="center"
+            android:text="Setting Up Your Profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24ssp"
+
+            android:fontFamily="@font/balooda2_bold">
+
+
+        </TextView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_180sdp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutCompat5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtFName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="@dimen/_14ssp"
+            android:ems="10"
+            android:fontFamily="@font/inter_regular"
+            android:hint="First Name"
+            android:inputType="text"
+           >
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="@dimen/_14ssp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:fontFamily="@font/inter_regular"
+            android:inputType="text"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:backgroundTint="#001834"
+        android:text="CONFIRM"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/balooda2_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginEnd="@dimen/_190sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icc_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

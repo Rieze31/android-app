@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentEditProfile">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat8"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/btnBackLogin"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:contentDescription="Back"
+            app:srcCompat="@drawable/btn_back"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-1dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RelativeLayout
+        android:id="@+id/addImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Your CircleImageView -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/addImages"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/student_image"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp" />
+
+        <!-- Black background with opacity, aligned to CircleImageView dimensions -->
+        <View
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_alignStart="@id/addImages"
+            android:layout_alignTop="@id/addImages"
+            android:layout_alignEnd="@id/addImages"
+            android:layout_alignBottom="@id/addImages"
+            android:background="@drawable/background_circle_overlay" /> <!-- Set the background to the drawable -->
+
+        <!-- Text for editing image, aligned to center of CircleImageView -->
+        <TextView
+            android:id="@+id/editImageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="@dimen/_85sdp"
+            android:text="Edit Image"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/balooda2_bold"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:text="First Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        app:drawableEndCompat="@drawable/baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addImage" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/border_radius"
+        android:backgroundTint="#D9D9D9"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtFName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_47sdp"
+            android:backgroundTint="#D9D9D9"
+            android:background="@drawable/border_radius"
+            android:ems="10"
+            android:hint=""
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/balooda2_bold"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:text="Last Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        app:drawableEndCompat="@drawable/baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/border_radius"
+        android:backgroundTint="#D9D9D9"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_47sdp"
+            android:backgroundTint="#D9D9D9"
+            android:ems="10"
+            android:background="@drawable/border_radius"
+            android:inputType="text"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:background="@drawable/border_radius"
+        android:backgroundTint="@color/midnight_blue"
+        android:fontFamily="@font/balooda2_bold"
+        android:text="Save"
+        android:onClick="saveProfile"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/classList"
+    android:layout_marginStart="@dimen/_12sdp"
+    android:layout_marginEnd="@dimen/_12sdp"
+    android:layout_marginVertical="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardElevation="@dimen/_8sdp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            app:srcCompat="@drawable/gradientbg" />
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/inter_bold"
+            android:text="21st Century Literature"
+            android:textColor="@color/white"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/teacherName"
+            android:layout_width="@dimen/_175sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:fontFamily="@font/balooda2_semi_bold"
+            android:text="Christopher Gallego"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp" />
+
+        <TextView
+            android:id="@+id/grade"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_120sdp"
+
+            android:fontFamily="@font/balooda2_regular"
+            android:text="Grade 12 - ICT - 1"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_120sdp"
+            android:visibility="gone"
+            android:fontFamily="@font/balooda2_regular"
+            android:text="CODE: "
+            android:textAlignment="textStart"
+            android:textSize="@dimen/_13ssp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/teacherImage"
+            android:layout_width="@dimen/_100sdp"
+            android:src="@drawable/teacher_image"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginStart="@dimen/_180sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

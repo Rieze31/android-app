@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".TeacherSectionPage2"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-25dp">
+
+
+    <Spinner
+        android:id="@+id/cbQuarters"
+        android:background="@color/profile_color"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_190sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:contentDescription="@string/select_semester"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSection">
+
+    </Spinner>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRestrict"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#001834"
+        android:text="Unrestrict all"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumOfStudents" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat8"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/btnBackLogin"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:contentDescription="Back"
+            app:srcCompat="@drawable/btn_back"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-1dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/txtSearch"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/border_radiusbg"
+        android:backgroundTint="#D9D9D9"
+        android:ems="10"
+        android:fontFamily="@font/inter_light"
+        android:inputType="text"
+        android:queryHint="Search"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat8"
+        app:searchHintIcon="@null"></androidx.appcompat.widget.SearchView>
+
+
+    <TextView
+        android:id="@+id/txtCode"
+        android:paddingStart="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Code: 3BHY61"
+        android:textColor="#767676"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSearch" />
+
+    <TextView
+        android:id="@+id/txtSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/inter_bold"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="Grade Section: 12-ICT-1"
+        android:textColor="#767676"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCode" />
+
+    <TextView
+        android:id="@+id/txtNumOfStudents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_110sdp"
+        android:fontFamily="@font/inter_bold"
+
+        android:text="Total Students: 5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSection" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sectionRecyclerView"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRestrict" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
